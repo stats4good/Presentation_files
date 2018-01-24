@@ -1,0 +1,10 @@
+#############################################################
+#####################  INCUBADORAS
+#############################################################
+
+Entidade.x.Recurso = matrix(c(16,1,24,0,3, 18,0,25,11,6, 0,0,27,0,30), 5, 3,
+                            dimnames = list(Entidade=c("I.E.S.P", "IFES","O.E",	"U.E",	"U.F"),
+                            Recurso=c("< 65 mil","De 65 a 379.000 mil", "> 379.000 mil"))) 
+
+chisq.test(Entidade.x.Recurso)
+plot(ca(Entidade.x.Recurso))
